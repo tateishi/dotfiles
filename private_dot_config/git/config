@@ -5,7 +5,6 @@
 [core]
         editor = vim -c \"set fenc=utf-8\"
         quotepath = false
-        excludesfile = ~/.dotfiles/git/ignore
 	autocrlf = input
 
 [alias]
