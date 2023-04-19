@@ -1,0 +1,66 @@
+# -*- mode: sh; coding: utf-8 -*-
+
+# bash
+alias pd=pushd
+alias dirs='dirs -v'
+
+function godir () {
+    local where=$1
+
+    mkdir -p ${where}
+    cd ${where}
+}
+
+# ls
+alias ls='ls --color=always'
+
+# grep
+alias grep='grep --color=always'
+alias fgrep='fgrep --color=always'
+alias egrep='egrep --color=always'
+
+# ag
+alias ag='ag --pager="less -n"'
+
+# diff
+alias diff='diff --color=always'
+
+# tmux
+
+function tm {
+    tmux new-session -A -s ${1:-default}
+}
+
+# emacsclient
+alias em='emacsclient -t -a ""'
+
+# dvtm
+alias wm='dtach -A tmp/dtach-dvtm -r winch -z dvtm -m ^t'
+
+# docker
+alias dc='docker-compose'
+
+DOCKER_DEFAULT_SERVICE=default
+
+function dcsh () {
+    if [ -n "${1}" ]; then
+        docker-compose exec ${1} bash
+    else
+        docker-compose exec ${DOCKER_DEFAULT_SERVICE} bash
+    fi
+}
+
+# multipass
+alias mp='multipass'
+
+# man
+alias man='MANWIDTH=$(($(tput cols) - 10)) man $*'
+
+# pipenv
+alias pe=pipenv
+
+# bat
+alias bat='LESS=-R batcat'
+
+# ansible-playbook
+alias ap=ansible-playbook
