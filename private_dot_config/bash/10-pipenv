@@ -1,0 +1,5 @@
+# -*- mode: sh; coding: utf-8 -*-
+
+
+export PIPENV_VENV_IN_PROJECT=true
+
