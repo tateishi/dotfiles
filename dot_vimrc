@@ -1,0 +1,12 @@
+set number
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+
+syntax enable
+
+inoremap <silent> jj <ESC>
+
+colorscheme ron
+
