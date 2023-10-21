@@ -31,6 +31,10 @@ function tm {
     tmux new-session -A -s ${1:-default}
 }
 
+function tmls {
+    tmux ls
+}
+
 # emacsclient
 alias em='emacsclient -t -a ""'
 
