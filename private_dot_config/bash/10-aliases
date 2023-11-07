@@ -68,3 +68,7 @@ alias bat='LESS=-R batcat'
 
 # ansible-playbook
 alias ap=ansible-playbook
+
+# chezmoi
+alias cm=chezmoi
+alias cme='chezmoi edit'
