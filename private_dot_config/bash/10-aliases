@@ -36,7 +36,9 @@ function tmls {
 }
 
 # emacsclient
-alias em='emacsclient -t -a ""'
+function em {
+    emacsclient -t -a "" -s ${1:-defualt}
+}
 
 # dvtm
 alias wm='dtach -A tmp/dtach-dvtm -r winch -z dvtm -m ^t'
