@@ -20,6 +20,8 @@ function lxlist () {
     lxc list -c ns4tS
 }
 
+alias lxls="lxc list -c ns4tS"
+
 function lxproxyadd () {
     local container=$1
     local container_port=$2
