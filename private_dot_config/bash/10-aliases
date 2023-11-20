@@ -37,7 +37,7 @@ function tmls {
 
 # emacsclient
 function em {
-    emacsclient -t -a "" -s ${1:-defualt}
+    emacsclient -t -a "" -s ${1:-default}
 }
 
 # dvtm
