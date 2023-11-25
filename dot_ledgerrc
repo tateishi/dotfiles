@@ -1,4 +1,4 @@
 --date-format %Y/%m/%d
---sort date
+--sort date,-amount
 --file main.ledger
 --account_width 30
