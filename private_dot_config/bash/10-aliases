@@ -65,6 +65,9 @@ alias man='MANWIDTH=$(($(tput cols) - 10)) man $*'
 # pipenv
 alias pe=pipenv
 
+# poetry
+alias po=poetry
+
 # bat
 alias bat='LESS=-R batcat'
 
