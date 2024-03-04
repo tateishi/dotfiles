@@ -27,7 +27,7 @@ function lxproxyadd () {
     local container_port=$2
     local host_port=${3:-${2}}
     local device_name=${container}-${container_port}
-    local container_address=$(lxc list -c n4 -f csv ${container} | grep eth0 | cut -d " " -f 1)
+    local container_address=$(lxc list -c n4 -f csv ${container} | grep eth0 | sed -e "s/.*,//" | cut -d " " -f 1)
 
     lxc config device add \
          ${container} \
