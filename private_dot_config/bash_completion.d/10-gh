@@ -1,0 +1,7 @@
+# -*- mode: sh; coding: utf-8 -*-
+
+GH=`which gh`
+
+if [ $? == 0 ]; then
+    eval "$($GH completion -s bash)"
+fi
