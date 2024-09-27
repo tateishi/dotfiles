@@ -1,0 +1,2 @@
+[ -f $HOME/.rye/env ] && . $HOME/.rye/env
+
