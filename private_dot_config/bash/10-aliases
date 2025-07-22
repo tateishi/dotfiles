@@ -77,3 +77,18 @@ alias ap=ansible-playbook
 # chezmoi
 alias cm=chezmoi
 alias cme='chezmoi edit'
+
+# clipboardに出力
+
+function clip() {
+    local input
+    local binput
+    if [ $# -eq 0 ]; then
+        input=$(cat)
+    else
+        input=${1}
+    fi
+
+    binput=$(echo "${input}" | base64 -w 0)
+    printf "\e]52;c;%s\a" "${binput}"
+}
