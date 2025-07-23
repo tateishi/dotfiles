@@ -90,5 +90,5 @@ function clip() {
     fi
 
     binput=$(echo "${input}" | base64 -w 0)
-    printf "\e]52;c;%s\a" "${binput}"
+    printf "\e]52;c;%s\e\\" "${binput}"
 }
