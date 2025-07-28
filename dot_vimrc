@@ -8,5 +8,3 @@ syntax enable
 
 inoremap <silent> jj <ESC>
 
-colorscheme ron
-
