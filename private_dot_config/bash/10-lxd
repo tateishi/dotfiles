@@ -47,6 +47,10 @@ function lxproxyrm () {
         ${device_name}
 }
 
+function lxdevs () {
+    lxc list --format json | jq -C '.[] | { name: .name, devices: .devices }'
+}
+
 function _lxc_containers () {
     [ ${COMP_CWORD} -gt 1 ] && return 1
 
