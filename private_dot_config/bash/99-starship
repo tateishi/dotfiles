@@ -1,4 +1,6 @@
 # -*- mode: sh; coding: utf-8 -*-
 
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-eval "$(starship init bash)"
+if command -v starship >/dev/null 2>&1; then
+    export STARSHIP_CONFIG=~/.config/starship/starship.toml
+    eval "$(starship init bash)"
+fi
