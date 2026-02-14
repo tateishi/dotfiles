@@ -3,5 +3,4 @@
 ## see: https://github.com/pypa/setuptools/issues/3278
 
 
-export SETUPTOOLS_USE_DISTUTILS=stdlib
 
