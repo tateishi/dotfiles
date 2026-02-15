@@ -1,5 +1,10 @@
 # -*- mode: sh; coding: utf-8 -*-
 
+# to install starship
+#
+# mkdir -p ~/.local/bin
+# curl -sS https://starship.rs/install.sh | BIN_DIR=~/.local/bin sh
+
 if command -v starship >/dev/null 2>&1; then
     export STARSHIP_CONFIG=~/.config/starship/starship.toml
     eval "$(starship init bash)"
