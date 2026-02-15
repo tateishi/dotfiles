@@ -4,6 +4,7 @@
 #
 # mkdir -p ~/.local/bin
 # curl -sS https://starship.rs/install.sh | BIN_DIR=~/.local/bin sh
+# git clone https://github.com/tateishi/starship-config ~/.config/starship
 
 if command -v starship >/dev/null 2>&1; then
     export STARSHIP_CONFIG=~/.config/starship/starship.toml
